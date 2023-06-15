@@ -4,11 +4,72 @@
 		<meta charset="UTF-8"/>
 		<title>Cadastro de Títulos</title>
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
 	</head>
 	
-	<body>
-		<h1>Cadastro de Títulos</h1>
+	<body>	
+	
+		<nav class="navbar bg-body-tertiary bg-primary" data-bs-theme="dark">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="www.algaworks.com.br">
+		      <img src="/images/Logo-Algaworks.png" alt="Algaworks" width="120" height="30" class="d-inline-block align-text-top">
+		      
+		    </a>
+		  </div>
+		</nav>
 		
+		
+		<div class="container">
+		
+			<form class="form-horizontal">
+				<table class="table table-hover mt-2">
+					<thead>
+						<tr class="table-secondary">
+							<th><h3>Novo Título</h3></th>
+						</tr>
+					</thead>
+				</table>
+				<div class="row mb-3">
+					<label for="descricao" class="col-sm-2 control-label">Descrição</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control"	id="descricao" />
+					</div>
+				</div>
+				
+				<div class="row mb-3">
+					<label for="dataVencimento" class="col-sm-2 control-label">Data de Vencimento</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control"	id="dataVencimento" />
+					</div>
+				</div>
+				
+				<div class="row mb-3">	
+					<label for="valor" class="col-sm-2 control-label">Valor</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control"	id="valor" />
+					</div>
+				</div>
+				
+				<div class="row mb-3">	
+					<label for="status" class="col-sm-2 control-label">Status</label>
+					<div class="col-sm-4">
+						<select class="form-control">
+							<option>Pedente</option>
+							<option>Recebido</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row mb-3">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				
+				</div>
+			</form>
+		
+		
+		</div>
 		
 		<script src="/js/bootstrap.min.js"></script>
 	</body>

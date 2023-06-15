@@ -4,10 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(name = "titulos")
 public class TituloController {
 
-	@RequestMapping(name = "titulos/novo")
+	@RequestMapping("/titulos/novo")
 	public String novo() {
 		return "CadastroTitulo";
 	}
