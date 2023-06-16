@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org.com/1999/xhtml">
+<html xmlns="http://www.w3.org.com/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Cadastro de Títulos</title>
@@ -22,6 +23,12 @@
 		<div class="container">
 		
 			<form class="form-horizontal" method="POST" action="/titulos">
+			
+				<div class="alert alert-success alert-dismissible fade show" role="alert" th:if="${!#strings.isEmpty(mensagem)}">
+				  <strong th:text="${mensagem}">Título cadastrado com sucesso!</strong> 
+				  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				
 				<table class="table table-hover mt-2">
 					<thead>
 						<tr class="table-secondary">
